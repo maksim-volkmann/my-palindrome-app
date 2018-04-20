@@ -17,15 +17,15 @@ class App extends React.Component {
   }
 
   handleSubmit(event) {
-    var realValue = this.state.value.toLowerCase();
+    var realValue = this.state.value.toLowerCase().replace(/ /g,'');
     var reverseValue = realValue.split('').reverse().join('');
 
     if(realValue.length == 0){
       this.setState({word: 'Plase enter a word first!'});
     }else if(realValue == reverseValue){
-      this.setState({word: 'Palindrome: ' + realValue});
+      this.setState({word: 'Palindrome'});
     }else{
-      this.setState({word: ('Not palindrome -> ' + realValue)});
+      this.setState({word: ('Not palindrome')});
       console.log(realValue.length);
     }
     this.setState({value: ''});

@@ -17,7 +17,9 @@ class App extends React.Component {
   }
 
   handleSubmit(event) {
-    var realValue = this.state.value.toLowerCase().replace(/ /g,'');
+    //getting the value and changing all the letter to lower case and removing all non alphanumeric characters
+    var realValue = this.state.value.toLowerCase().replace(/\W/g, '');
+    //reversing a string to mach real value from the input
     var reverseValue = realValue.split('').reverse().join('');
 
     if(realValue.length == 0){
@@ -26,7 +28,6 @@ class App extends React.Component {
       this.setState({word: 'Palindrome'});
     }else{
       this.setState({word: ('Not palindrome')});
-      console.log(realValue.length);
     }
     this.setState({value: ''});
     event.preventDefault();

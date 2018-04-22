@@ -1,8 +1,8 @@
 # Explanation
 
-The main app functionality was pretty simple. It took me about 15min.
-The hardest thing for me was to convert it to  React.js app. I played with React in the past, but never delivered full working app.
-If I had more time, I would learn and used Redux, witch I never used before.
+The main app functionality was pretty simple. It took me about 15min.  
+The hardest thing for me was to convert it to  React.js app. I played with React in the past, but never delivered full working app.  
+If I had more time, I would learn and used Redux, witch I never used before.  
 
 # Palindrome application
 A palindrome is a word, phrase, number or other sequence of characters which reads the same backward as forward, such as madam or racecar.  
